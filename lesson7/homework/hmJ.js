@@ -162,14 +162,14 @@ class kazka {
 const kazkaa = [
     new kazka('baba1', 17, 29),
     new kazka('baba2', 42, 33),
-    new kazka('baba3',26,44),
-    new kazka('baba4',34,47),
-    new kazka('baba5',37,37),
-    new kazka('baba6',23,40),
-    new kazka('baba7',29,50),
-    new kazka('baba8', 57,41),
-    new kazka('baba9',41,39),
-    new kazka('baba0',19,38)
+    new kazka('baba3', 26, 44),
+    new kazka('baba4', 34, 47),
+    new kazka('baba5', 37, 37),
+    new kazka('baba6', 23, 40),
+    new kazka('baba7', 29, 50),
+    new kazka('baba8', 57, 41),
+    new kazka('baba9', 41, 39),
+    new kazka('baba0', 19, 38)
 
 ];
 console.log(kazkaa);
@@ -183,15 +183,22 @@ class Prince {
         this.show = show;
     }
 }
+
 const prince = new Prince('Prince', 86, 37);
 
 
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 
 
-const love = kazkaa.find(value => value.size === prince.show);
+const love = (princess, prince) => {
+    for (const item of princess) {
+        if (item.leg === prince.show) {
+            return `${item.name}`
+        }
+    }
+}
 
-console.log(kazkaa, prince);
+console.log(love(kazkaa, prince));
 
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
