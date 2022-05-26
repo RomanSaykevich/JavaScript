@@ -34,15 +34,13 @@
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
 //
 //
-document.getElementById('btn2').onclick = function () {
-    const za1 = document.forms.zav1.za1.value
-    const za2 = document.forms.zav1.za2.value
-    const za3 = document.forms.zav2.za3.value
-    const za4 = document.forms.zav2.za4.value
-    console.log(za1, za2, za3, za4);
-}
-
-
+// document.getElementById('btn2').onclick = function () {
+//     const za1 = document.forms.zav1.za1.value
+//     const za2 = document.forms.zav1.za2.value
+//     const za3 = document.forms.zav2.za3.value
+//     const za4 = document.forms.zav2.za4.value
+//     console.log(za1, za2, za3, za4);
+// }
 
 //
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
