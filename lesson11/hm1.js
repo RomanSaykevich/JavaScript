@@ -2,14 +2,14 @@
 //     При відправці форми записати об'єкт в localstorage
 //
 
-let for1 = document.forms.for1;
-for1.onsubmit = function (e) {
-    e.preventDefault();
-    let name = this.name.value;
-    let age = this.age.value;
-    console.log(name, age);
-    localStorage.setItem('userData',JSON.stringify({name:name, age: age}))
-};
+// let for1 = document.forms.for1;
+// for1.onsubmit = function (e) {
+//     e.preventDefault();
+//     let name = this.name.value;
+//     let age = this.age.value;
+//     console.log(name, age);
+//     localStorage.setItem('userData',JSON.stringify({name:name, age: age}))
+// };
 // -створити форму з інпутами для model,type та volume автівки.
 //     при відпарвці форми об'єкти зберігаються в масиві в локальному сховищі.
 
