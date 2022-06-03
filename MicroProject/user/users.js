@@ -13,8 +13,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             userDiv.innerText =
                 `user id - ${userItem.id}
                      user name- ${userItem.name}`
-            let btnUsers = document.createElement('button');
-            btnUsers.classList.add('buttonUser')
+
             let hrefUser = document.createElement('a');
             hrefUser.classList.add('btnUser');
             hrefUser.innerText = 'Detailed information';
