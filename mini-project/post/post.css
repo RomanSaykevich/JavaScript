@@ -3,6 +3,15 @@
 так, что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)*/
 
 body{
+    margin: 0;
+    padding: 0;
+    background: url("https://www.chemonics.com/wp-content/uploads/2019/01/Ukraine-DG-East.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 .DivInfo{
     padding: 10px;
@@ -11,6 +20,10 @@ body{
     height: 290px;
     width: 400px;
     border-radius: 10px;
+    font-size: 19px;
+    font-family: cursive;
+    box-shadow: 0 10px 10px rgb(0, 40, 239), 0 10px 20px rgb(0, 40, 239);
+color: rgb(0, 0, 0);
 }
 .infPost{
     display: flex;
@@ -24,16 +37,22 @@ body{
     position: absolute;
     top: 620px;
     left: 600px;
+    font-size: 15px;
+    font-family: cursive;
+    color: black;
+    background: rgba(14, 14, 14, 0);
+    box-shadow: 0 10px 10px rgb(255, 255, 0), 0 10px 20px rgb(255, 255, 0);
 }
 .commentDiv{
     display: flex;
     width: 300px;
     padding: 10px;
     border-radius: 20px;
-
+    font-size: 16px;
+    font-family: cursive;
     margin-top: 20px;
     margin-left: 40px;
-
+    box-shadow: 0 10px 10px rgb(255, 255, 0), 0 10px 20px rgb(255, 255, 0);
 }
 .comPoster{
     display: flex;
@@ -46,4 +65,8 @@ body{
     position: absolute;
     top: 620px;
     left: 850px;
+    font-size: 16px;
+    font-family: cursive;
+    color: black;
+    box-shadow: 0 10px 10px rgb(255, 255, 0), 0 10px 20px rgb(255, 255, 0);
 }

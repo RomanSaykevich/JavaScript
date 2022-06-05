@@ -1,7 +1,9 @@
 /*// user-details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.*/
 /*// блоки с краткой информацией про post - в ряд по 5 объектов.*/
-body{
-    background: url("https://undersea.ua/1.jpg");
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://st2.depositphotos.com/4806425/9735/i/450/depositphotos_97354818-stock-photo-oil-painting-grunge-effected-illustration.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -9,44 +11,48 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-.fullUser{
+
+.fullUser {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url("https://undersea.ua/1.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
+
 .btnD {
+    background: rgba(113, 113, 4, 0);
+    color: #0e0e0e;
     width: 200px;
     padding: 8px;
     border-radius: 10px;
     position: absolute;
     top: 660px;
     left: 600px;
-
+    font-size: 20px;
+    font-family: cursive;
 }
-.divFull{
 
+.divFull {
+    box-shadow: 0 10px 10px rgb(157 157 159), 0 10px 20px rgb(140 140 141);
 
     padding: 10px;
-    margin-left: 460px;
+    margin-left: 550px;
     margin-top: 10px;
-    height: 290px;
+    height: 200px;
     width: 400px;
     border-radius: 10px;
-
+    font-size: 20px;
+    font-family: cursive;
+    overflow: auto;
 }
-.titleUserDiv{
+
+.titleUserDiv {
     display: flex;
     flex-wrap: wrap;
     margin-top: 36px;
 }
-.btnDivTit{
+
+.btnDivTit {
+    box-shadow: 0 10px 10px rgb(10, 0, 0), 0 10px 20px rgb(5, 0, 0);
     display: flex;
     flex-direction: column;
     width: 268px;
@@ -54,12 +60,14 @@ body{
     border-radius: 20px;
     margin-top: 35px;
     margin-left: 16px;
+    font-size: 20px;
+    font-family: cursive;
 }
-.hrefP{
+
+.hrefP {
     width: 200px;
     padding: 3px;
-
-
+    color: #0e0e0e;
 
 
 
