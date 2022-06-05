@@ -1,0 +1,64 @@
+/*ost-details.html - блок с информацией про пост вверху. Комментарии - по 4 в ряд.*/
+/* Все без исключения элементы, который характеризируют user,post,comment  визуализировать,
+так, что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)*/
+
+body{
+    background: #eeeeee;
+}
+.DivInfo{
+    padding: 10px;
+    margin-left: 460px;
+    margin-top: 10px;
+    height: 290px;
+    border: 5px solid #dad9d9;
+    box-shadow: 0 15px 30px rgb(196, 196, 196), 0 20px 20px rgb(196, 196, 196);
+    background: #dad9d9;
+    width: 400px;
+    color: #8d8888;
+    border-radius: 10px;
+}
+.infPost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btnPosts{
+    box-shadow: 0 15px 30px rgb(196, 196, 196), 0 10px 10px rgb(196, 196, 196);
+    width: 200px;
+    padding: 8px;
+    color: #8d8888;
+    border: 5px solid #dad9d9;
+    border-radius: 10px;
+    position: absolute;
+    top: 620px;
+    left: 600px;
+    background: #dad9d9;
+}
+.commentDiv{
+    display: flex;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid #dad9d9;
+    box-shadow: 0 15px 30px rgb(196, 196, 196), 0 20px 20px rgb(196, 196, 196);
+    background: #dad9d9;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #8d8888;
+}
+.comPoster{
+    display: flex;
+    flex-wrap: wrap;
+}
+.comentHref{
+    box-shadow: 0 15px 30px rgb(196, 196, 196), 0 10px 10px rgb(196, 196, 196);
+    width: 200px;
+    padding: 8px;
+    color: #8d8888;
+    border: 5px solid #dad9d9;
+    border-radius: 10px;
+    position: absolute;
+    top: 620px;
+    left: 850px;
+    background: #dad9d9;
+}

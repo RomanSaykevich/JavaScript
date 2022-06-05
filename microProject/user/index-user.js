@@ -1,7 +1,7 @@
-// 1 Получити масив обєктів user с endpoint`а https://jsonplaceholder.typicode.com/users
-// 2 Вивести id,name усіх user в index.html. Окремий блок для кожного user.
-// 3 Добавити кожному блоку кнопку/силку, при натисканні на которую відувається перехід на сторінку user-details.html,
-// яка має детальную інформацію про обєкт на який натиснули
+// 1 получить массив объектов user с endpoint`а https://jsonplaceholder.typicode.com/users
+// 2 Вывести id,name всех user в index.html. Отдельный блок для каждого user.
+// 3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user-details.html,
+// которая имеет детальную информацию про объект на который кликнули
 //
 let usersDiv = document.getElementsByClassName('users')[0];
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -16,10 +16,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
             let hrefUser = document.createElement('a');
             hrefUser.classList.add('btnUser');
-            hrefUser.innerText = 'Detailed information';
-            hrefUser.href = 'userD.html?id=' + userItem.id
-
-
+            hrefUser.innerText = ' кнопка';
+            hrefUser.href = 'user-hm.html?id=' + userItem.id
 
             userDiv.append(hrefUser);
             usersDiv.append(userDiv);
@@ -27,5 +25,5 @@ fetch('https://jsonplaceholder.typicode.com/users')
     })
 
 //
-// Стилізація проекта -
+// Стилизация проекта -
 // Все без исключения элементы, который характеризируют user,post,comment  визуализировать, так, что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)
