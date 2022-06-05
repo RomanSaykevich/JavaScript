@@ -1,0 +1,66 @@
+/*// user-details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.*/
+/*// блоки с краткой информацией про post - в ряд по 5 объектов.*/
+body{
+    background: url("https://undersea.ua/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.fullUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("https://undersea.ua/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.btnD {
+    width: 200px;
+    padding: 8px;
+    border-radius: 10px;
+    position: absolute;
+    top: 660px;
+    left: 600px;
+
+}
+.divFull{
+
+
+    padding: 10px;
+    margin-left: 460px;
+    margin-top: 10px;
+    height: 290px;
+    width: 400px;
+    border-radius: 10px;
+
+}
+.titleUserDiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 36px;
+}
+.btnDivTit{
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+    padding: 3px;
+    border-radius: 20px;
+    margin-top: 35px;
+    margin-left: 16px;
+}
+.hrefP{
+    width: 200px;
+    padding: 3px;
+
+
+
+
+
+}
