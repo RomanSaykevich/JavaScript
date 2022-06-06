@@ -3,23 +3,25 @@
 // 3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user-details.html,
 // которая имеет детальную информацию про объект на который кликнули
 //
+
 let usersDiv = document.getElementsByClassName('users')[0];
+
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(value => value.json())
     .then(value=>{
+
         for (const userItem of value) {
+
             let userDiv = document.createElement('div');
-            userDiv.classList.add('userDD');
-            userDiv.innerText =
-                `user id - ${userItem.id}
+                userDiv.classList.add('userDD');
+                userDiv.innerText =
+                    `user id - ${userItem.id}
                      user name- ${userItem.name}`
 
             let hrefUser = document.createElement('a');
-            hrefUser.classList.add('btnUser');
-            hrefUser.innerText = 'details';
-            hrefUser.href = '../user/user.html?id=' + userItem.id
-
-
+                hrefUser.classList.add('btnUser');
+                hrefUser.innerText = 'details';
+                hrefUser.href = '../user/user.html?id=' + userItem.id
 
             userDiv.append(hrefUser);
             usersDiv.append(userDiv);
